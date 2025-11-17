@@ -16,3 +16,70 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+#datetime-picker {
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 272px;
+  margin-right: 8px;
+  transition: border-color 0.2s;
+}
+
+#datetime-picker:focus {
+  border-color: #7b61ff;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[data-start]:hover {
+  background-color: #6c8cff;;
+}
+
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}

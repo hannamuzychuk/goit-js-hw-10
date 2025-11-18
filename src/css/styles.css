@@ -83,3 +83,131 @@ button[data-start]:hover {
   line-height: 1.5;
   color: #2e2f42;
 }
+
+.container-snackbox {
+  max-width: 360px;
+  margin: 40px auto;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.back-link {
+  margin-bottom: 16px;
+}
+
+.main-title {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: start;
+}
+
+input[type="number"] {
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s;
+  margin-top: 8px;
+}
+
+input[type="number"]:hover {
+  border-color: #000000;
+}
+
+input[type="number"]:focus {
+  border-color: #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #d0d0d0;
+  padding: 14px 48px 8px 48px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    text-align: start;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 26px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s border-color;
+}
+
+
+input[type="radio"]:hover {
+  border-color: #4a78ff;
+  transform: scale(1.1);
+}
+
+input[type="radio"]:checked {
+  border-color: #4a78ff;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #4a78ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+button[type="submit"]:hover {
+  background: #6c8cff;
+}

@@ -35,8 +35,19 @@
   transition: border-color 0.2s;
 }
 
+#datetime-picker:hover {
+  border-color: #000000;
+}
+
 #datetime-picker:focus {
-  border-color: #7b61ff;
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
 }
 
 button[data-start] {
@@ -50,10 +61,22 @@ button[data-start] {
   transition: background-color 0.2s;
 }
 
-button[data-start]:hover {
-  background-color: #6c8cff;;
+button[data-start]:disabled {
+  background-color: #dcdcdc;
+  color: #8f8f8f;
+  cursor: not-allowed;
 }
 
+button[data-start]:enabled {
+  background-color: #4e75ff;
+  color: #fff;
+}
+
+
+button[data-start]:hover {
+  background-color: #6c8cff;
+  color: fff;
+}
 
 .timer {
   display: flex;
@@ -171,7 +194,6 @@ input[type="radio"] {
   transition: 0.2s border-color;
 }
 
-
 input[type="radio"]:hover {
   border-color: #4a78ff;
   transform: scale(1.1);
@@ -191,7 +213,6 @@ input[type="radio"]:checked::before {
   top: 3px;
   left: 3px;
 }
-
 
 button[type="submit"] {
   width: 100%;
